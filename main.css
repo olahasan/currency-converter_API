@@ -1,0 +1,86 @@
+:root {
+  --bigBorderRadius: 10px;
+  --smallBorderRadius: 4px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: #003049;
+  width: 100%;
+  max-width: 300px;
+  /* margin: 100px auto; */
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: var(--bigBorderRadius);
+  color: #f77f00;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 2px;
+}
+
+input {
+  cursor: pointer;
+  padding: 6px;
+  border-radius: var(--smallBorderRadius);
+  border: none;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+input#inputAmount::placeholder {
+  transition: opacity 0.5s;
+}
+input#inputAmount:focus::placeholder {
+  opacity: 0;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: var(--smallBorderRadius);
+  background-color: #d62828;
+  font-size: 14px;
+  font-weight: 700;
+}
+.equal {
+  margin: 0 auto;
+  height: 27px;
+  background-color: #eae2b7;
+  border-radius: var(--smallBorderRadius);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 5px;
+}
+.equal:hover {
+  overflow: visible;
+}

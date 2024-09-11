@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- next meta, tells the browser to use the most modern version, standards-compliant rendering mode available -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="from">
+        <label for="inputAmount">Convert From US Dollar: </label>
+        <input
+          id="inputAmount"
+          type="number"
+          placeholder="Enter amount in USD"
+          min="1"
+        />
+      </div>
+      <div class="to">
+        <label for="to">To: </label>
+        <input list="Countries" name="browser" id="to" value="EGP" />
+        <datalist id="Countries"> </datalist>
+      </div>
+      <button>Convert</button>
+      <div class="equal">???</div>
+    </div>
+    <script src="main2.js"></script>
+  </body>
+</html>
