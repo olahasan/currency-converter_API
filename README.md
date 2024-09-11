@@ -70,7 +70,7 @@ Otherwise, all links will open in the same tab.
 ### Error Handling
 - I learned how to implement error handling to provide better user feedback and improve the robustness of the application.
 
-######Overall, this project has helped me strengthen my front-end development skills and provided a solid foundation for future projects involving API integration and dynamic content.
+###### Overall, this project has helped me strengthen my front-end development skills and provided a solid foundation for future projects involving API integration and dynamic content.
 
 
 ## Continued Development
